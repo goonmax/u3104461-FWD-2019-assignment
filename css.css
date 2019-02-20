@@ -1,0 +1,121 @@
+hgroup > h1, h2 {
+    margin: 0;
+}
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+}
+.warning {
+    border: 10px beige rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.527);
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.warning img {
+    width: 100%;
+}
+
+.warning p {
+    font: small-caps bold 1.2rem sans-serif;
+    text-align: center;
+}
+a[href^="https"]::before {
+    content: "🔗 ";
+  }
+  
+  a[href^="mailto"]::before {
+    content: "📧 ";
+  }
+  
+  a[href^="tel"]::before {
+    content: "📞 ";
+  }
+  
+  li {
+    margin-bottom: .5rem;
+  }
+
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+      margin: .1rem 0;
+  }
+  
+  h1 {
+      font-size: 2rem;
+  }
+  
+  h2 {
+      font-size: 1.5rem;
+      padding-left: 20px;
+  }
+  
+  h3 {
+      font-size: 1.2rem;
+      padding-left: 40px;
+  }
+  
+  h4 {
+      font-size: 1rem;
+      font-style: italic;
+      padding-left: 60px;
+  }
+  
+  blockquote {
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p {
+    padding: 15px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+li {
+    font: 1rem 'Fira Sans', sans-serif;
+    margin-bottom: .5rem;
+}
+
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+.note {
+    font-size: .8em;
+}
