@@ -1,121 +1,101 @@
-hgroup > h1, h2 {
-    margin: 0;
-}
-article {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    background-color: #45a1ff;
-    color: #fff;
-}
-.warning {
-    border: 10px beige rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.527);
-    padding: .5rem;
-    display: flex;
-    flex-direction: column;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
 }
 
-.warning img {
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
     width: 100%;
-}
-
-.warning p {
-    font: small-caps bold 1.2rem sans-serif;
-    text-align: center;
-}
-a[href^="https"]::before {
-    content: "🔗 ";
   }
-  
-  a[href^="mailto"]::before {
-    content: "📧 ";
-  }
-  
-  a[href^="tel"]::before {
-    content: "📞 ";
-  }
-  
-  li {
-    margin-bottom: .5rem;
-  }
-
-  
-  h1,
-  h2,
-  h3,
-  h4 {
-      margin: .1rem 0;
-  }
-  
-  h1 {
-      font-size: 2rem;
-  }
-  
-  h2 {
-      font-size: 1.5rem;
-      padding-left: 20px;
-  }
-  
-  h3 {
-      font-size: 1.2rem;
-      padding-left: 40px;
-  }
-  
-  h4 {
-      font-size: 1rem;
-      font-style: italic;
-      padding-left: 60px;
-  }
-  
-  blockquote {
-    background: #eee;
-    border-radius: 5px;
 }
 
-blockquote p {
-    padding: 15px;
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-blockquote p::before {
-    content: '\201C';
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-blockquote p::after {
-    content: '\201D';
-}
-li {
-    font: 1rem 'Fira Sans', sans-serif;
-    margin-bottom: .5rem;
-}
-
-table,
-td {
-    border: 1px solid #333;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-thead,
-tfoot {
-    background-color: #333;
-    color: #fff;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-input,
-label {
-    margin: .4rem 0;
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
-
-.note {
-    font-size: .8em;
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 3px;
+}
+.grid-item {
+  background-color: rgba(175, 175, 175, 0.6);
+  border: 0.4px solid rgba(0, 0, 0, 0.6);
+  padding: 0.4px;
+  font-size: 17px;
+  text-align: center;
+}
+h1, #para1 {
+  text-shadow: 2px 2px red;
 }
